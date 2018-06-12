@@ -1,6 +1,8 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 
+.vscode
+
 __pycache__
 *.7z
 *.dmg
