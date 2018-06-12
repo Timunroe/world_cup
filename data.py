@@ -10,8 +10,6 @@ import config as cfg
 # Put <script src="https://picabot.s3.amazonaws.com/pagejs/spec_prov_elxn.js"></script> in DNN footer
 # put <div class="pica-results"></div> in DNN body
 
-# NEED TAGS for local ridings, candidates, parties?
-
 
 def minify_html(s_html):
     # returns string of minified html
@@ -46,4 +44,4 @@ if __name__ == "__main__":
     # call api, update database
     model.get_new_data()
     # build template
-    build_template()
+    # build_template()

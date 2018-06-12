@@ -32,18 +32,18 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:06b8bd0a6ecc875c5b7a73b023617a714e0aae2dda194c624790cb5ce3767919",
-                "sha256:6b2a3640da3e1282acee29a05494fa96d0850426233f50c49e46f6f07ea08c20"
+                "sha256:1023b6049cf542a48fc0dda536aef7c5702f76c34dccbe8ab1706d9cfb2c8a6b",
+                "sha256:4376b0844bc68c917e4e805638dfee1fcc08c3744e97f0465c09595140004adf"
             ],
             "index": "pypi",
-            "version": "==1.7.35"
+            "version": "==1.7.36"
         },
         "botocore": {
             "hashes": [
-                "sha256:15bd5b023348b1b51caa8b2e70c99945031cc80b2610c3b4ed351774d04ab95d",
-                "sha256:7529de3954989d8433d65d9c57013f2109099a1b7d64f6a6f9e53c2ad6f9a06b"
+                "sha256:5edb2c13dfd7a797c285b2d611738d6aee2ab3cf08ead50c9d1e728f7fceccb1",
+                "sha256:c29cdf7e3e8134c37a2f1535fbd513161504e2171acf3fba359f63945ed9c0f7"
             ],
-            "version": "==1.10.35"
+            "version": "==1.10.36"
         },
         "certifi": {
             "hashes": [

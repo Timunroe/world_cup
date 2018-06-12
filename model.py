@@ -25,8 +25,11 @@ def parse_feed(items):
         post['asset_id'] = item['assetId']
         post['source_api'] = item['newsSource']
         post['tags_api'] = []
-        post['caption_api'] = smartypants.smartypants(item['imageCaption'].strip())
-        post['categories_api'] = item['categoriesSubCategories']
+        if 'imageCaption' in item:
+            post['caption_api'] = smartypants.smartypants(item['imageCaption'].strip())
+        else:
+            post['caption_api'] = ""
+        post['categories_api'] = list(set([item for sublist in item['categoriesSubCategories'] for item in sublist.split('||')]))
         post['desc_api'] = smartypants.smartypants(item['description'].strip())
         post['desc_api'] = " ".join(post['desc_api'].split())
         if item['contentType'] == 'ArticleBlogpost':
@@ -79,6 +82,25 @@ def parse_feed(items):
     unique_posts = list({v['asset_id']: v for v in posts}.values())
     # sorted_posts = sorted(unique_posts, key=itemgetter('dnn_pubdate'), reverse=True)
     return unique_posts
+
+
+def filter_feed(items):
+    new_list =[]
+    m = re.compile('World Cup', flags=re.I)
+    for item in items:
+        # is 'World Cup' in 'categories_api'?
+        if any(m.search(x) for x in item['categories_api']):
+            # Yes. Add item to new_list
+            new_list.append(item)
+            # No. Is 'World Cup in 'title' OR 'description' OR 'caption'?
+        elif any(m.search(x) for x in [item['title_api'], item['desc_api'], item['caption_api']]):
+            # Yes. Add item to new_list
+            new_list.append(item)
+            # No. Set item to draft
+        else:
+            item['draft_api'] = True
+            new_list.append(item)
+    return new_list
 
 
 def munge_feed(items):
@@ -149,7 +171,8 @@ def get_new_data():
     for api in cfg.config['apis']:
         data = fetch.fetch_data(s_url=api['url'], l_filter=api['filter'])
         raw_posts = parse_feed(data)
-        posts = munge_feed(raw_posts)
+        # posts = munge_feed(raw_posts)
+        posts = filter_feed(raw_posts)
         db_insert(posts)
         time.sleep(1)
 
@@ -164,7 +187,7 @@ def get_lineup():
     db = TinyDB(cfg.config['db_name'])
     Record = Query()
     # get records that are 1. not in draft 2. not in rank list
-    lineup = {}
+    # lineup = {} this not needed as we are returning list, not dict of lists
     # get any records with rank not equal to 0
     rank_list = sorted(db.search(Record.rank != 0), key=itemgetter('rank'))
     # print(f"rank list is: {rank_list}")
@@ -173,8 +196,7 @@ def get_lineup():
     # print(f"++++++++\nPublished list is:\n")
     # for z in published:
     # print(z['title_api'])
-    # filter by region
-    lineup['spec'] = [x for x in published if x['region_api'] == ''][:18]
+    lineup = [x for x in published][:18]
     # print(f"Lineup spec is: {lineup['spec']}")
     # need to insert items from rank list
     for item in rank_list:
@@ -182,10 +204,7 @@ def get_lineup():
         # I think they get put in according to how list was sorted
         # so latest item with same rank is ahead of older item with same rank?
         idx = (item['rank'] - 1)
-        lineup['spec'][idx:idx] = [item]
-    # get records for other sections
-    lineup['niagara'] = [x for x in published if x['region_api'] == 'niagara'][:9]
-    lineup['halton'] = [x for x in published if x['region_api'] == 'halton'][:9]
+        lineup[idx:idx] = [item]
     db.close()
     # print("Records going into lineup:")
     # print(records)

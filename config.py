@@ -14,19 +14,22 @@ config = {
     },
     "db_fields": 
     [
-        'asset_id', 
-        'author_api', 
-        'label_api', 
-        'source_api', 
-        'desc_api', 
-        'draft_api', 
-        'link', 
-        'img_api', 
-        'img_api_thumb', 
-        'pubdate_api', 
-        'region_api', 
-        'site_api', 
-        'timestamp', 
+        'asset_id',
+        'author_api',
+        'caption_api',
+        'categories_api',
+        'label_api',
+        'source_api',
+        'desc_api',
+        'draft_api',
+        'link',
+        'img_api',
+        'img_api_thumb',
+        'pubdate_api',
+        'region_api',
+        'site_api',
+        'tags_api',
+        'timestamp',
         'title_api'
     ],
     "apis":
@@ -39,9 +42,9 @@ config = {
     "munge": []
 }
 
-# http://api.zuza.com/search/article/default?&category=news&subcategory=provincial-election&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10
-# http://api.zuza.com/search/article/default?&category=news&subcategory=provincial-election&pageIndex=1&location=niagara&sort=datedesc&pageSize=10&startindex=1&endindex=10
-# http://api.zuza.com/search/article/default?&category=news&subcategory=provincial-election&pageIndex=1&location=halton&sort=datedesc&pageSize=10&startindex=1&endindex=10
-#####
-# municipal election
-# http://api.zuza.com/search/article/default?&category=news&subcategory=municipal-election&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10
+# BY KEYWORD
+# http://api.zuza.com/search/article/default?q=KeywordsAlias:”XXXXX"&pageIndex=1&location=hamilton&sort=datedesc&pageSize=5startindex=1&endindex=5
+# BY CATEGORY/SUBCATEGORY
+# http://api.zuza.com/search/article/default?&category=XXXX&subcategory=XXXX&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10
+# BY AUTHOR: where guid: is author page key.
+# http://api.zuza.com/search/article/default?guid=25a2fb14-ae69-41f2-beab-bdda47383f93&pageIndex=1&location=hamilton&sort=datedesc&pageSize=15&startindex=1&endindex=5

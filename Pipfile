@@ -4,14 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
-pylint = "*"
 arrow = "*"
-htmlmin = "*"
-tinydb = "*"
-"boto3" = "*"
 requests = "*"
+flask = "*"
+htmlmin = "*"
 smartypants = "*"
+"boto3" = "*"
+tinydb = "*"
+pylint = "*"
 
 [dev-packages]
 
