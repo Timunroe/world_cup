@@ -44,4 +44,4 @@ if __name__ == "__main__":
     # call api, update database
     model.get_new_data()
     # build template
-    # build_template()
+    build_template()

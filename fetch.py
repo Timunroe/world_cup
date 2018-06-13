@@ -9,7 +9,7 @@ def put_S3():
     s3 = boto3.resource('s3')
     js_file_name = cfg.config['project_name'] + '_' + cfg.config['name'] + '.js'
     data = open(f'./build/{js_file_name}', 'rb')
-    s3.Bucket('picabot').put_object(Key=f'pagejs/{js_file_name}', Body=data)
+    s3.Bucket('picabot').put_object(Key=f'pagejs/{js_file_name}', Body=data, CacheControl="max-age=1800")
     return
 
 
