@@ -42,7 +42,23 @@ core_template = '''\
 {% endmacro %}
 
 <!-- STATIC HEADER -->
-<p></p>
+<h2>Upcoming matches</h2>
+<p>All times Eastern</p>
+<p><b>THURSDAY, JUNE 14</b></p>
+<p>Russia vs. Saudi Arabia, 11 a.m.</p>
+<p><b>FRIDAY, JUNE 15</b></p>
+<p>Egypt vs. Uruguay, 8 a.m.</p>
+<p>Morocco vs. Iran, 11 a.m.</p>
+<p>Portugal vs. Spain, 2 p.m.</p>
+<p><b>SATURDAY, JUNE 16</b></p>
+<p>France vs. Australia, 6 a.m.</p>
+<p>Argentina vs. Iceland, 10 a.m.</p>
+<p>Peru vs. Denmark, 12 p.m.</p>
+<p>Croatia vs. Nigeria, 3 p.m.</p>
+<p><b>SUNDAY, JUNE 17</b></p>
+<p>Costa Rica vs. Serbia, 8 a.m.</p>
+<p>Germany vs. Mexico, 11 a.m.</p>
+<p>Brazil vs. Switzerland, 2 p.m.</p>
 <!-- END STATIC HEADER -->
 <hr>
 <!-- CURATION LIST -->
