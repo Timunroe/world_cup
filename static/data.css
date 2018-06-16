@@ -101,3 +101,38 @@ so 800/3 ~ 250px (round down because of margins)
     opacity: .8;
     transition: opacity .15s ease-out
 }
+
+/* TABS CSS */
+
+ul.pica-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pica-tabs li {
+    display: inline;
+    margin: 0 5px 0 0;
+    border-radius: .5rem;
+    border-color: rgba(0, 0, 0, .1);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #f4f4f4;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+[pica-tabs-section] .pica-tabs li a {
+    color: rgba(0, 0, 0, .6);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+[pica-tabs-section] .pica-tabs li a.active {
+  color: red;
+}
