@@ -52,7 +52,7 @@ so 800/3 ~ 250px (round down because of margins)
 }
 
 .pica-card-text p {
-  margin-top: 8px
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 

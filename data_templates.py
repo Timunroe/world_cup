@@ -53,26 +53,30 @@ core_template = '''\
 <!-- START TABS PANELS-->
 <div class="pica-tab-sections content_1 tabcontent">
     <p><small>All times Eastern</small></p>
-    <h3 style="margin-top: 4px; margin-bottom: 2px;">SATURDAY, JUNE 16</h3>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331533/#match-liveblog">France 2, Australia 1</a></p>
-    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/cbK7TNmM6vU' frameborder='0' allowfullscreen></iframe></div>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331515/#match-liveblog">Argentina 1, Iceland 1</a></p>
-    <div class='embed-container'><iframe src='https://www.youtube.com/embed/ZAmXlI8aLzo' frameborder='0' allowfullscreen></iframe></div>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331528/#match-liveblog">Peru vs. Denmark, 12 p.m.</a></p>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331523/#match-liveblog">Croatia vs. Nigeria, 3 p.m.</a></p>
     <h3 style="margin-top: 4px; margin-bottom: 2px;">SUNDAY, JUNE 17</h3>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331529/#match-liveblog">Costa Rica vs. Serbia, 8 a.m.</a></p>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331502/#match-liveblog">Germany vs. Mexico, 11 a.m.</a></p>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331525/#match-liveblog">Brazil vs. Switzerland, 2 p.m.</a></p>
+    <p><a href="https://www.fifa.com/worldcup/matches/match/300331529/#match-liveblog">Costa Rica 0,  Serbia 1</a></p>
+    <p><a href="https://www.fifa.com/worldcup/matches/match/300331502/#match-liveblog">Germany 0, Mexico 1</a></p>
+    <p><a href="https://www.fifa.com/worldcup/matches/match/300331525/#match-liveblog">Brazil 1, Switzerland 1</a></p>
+<h3 style="margin-top: 4px; margin-bottom: 2px;">MONDAY, JUNE 18</h3>
+   <p><a href="https://www.fifa.com/worldcup/matches/match/300331499/#match-liveblog?cid=go_boxpreview">Sweden vs. South Korea, 8 a.m.</a></p>
+   <p><a href="https://www.fifa.com/worldcup/matches/match/300331539/#match-liveblog?cid=go_boxpreview">Belgium vs. Panama, 11 a.m.</a></p>
+   <p><a href="https://www.fifa.com/worldcup/matches/match/300331554/#match-liveblog?cid=go_boxpreview">Tunisa vs. England, 2 p.m.</a></p>
+   <h3 style="margin-top: 4px; margin-bottom: 2px;">TUESDAY, JUNE 19</h3>
+   <p><a href="https://www.fifa.com/worldcup/matches/match/300331550/#match-liveblog?cid=go_boxpreview">Colombia vs. Japan, 8 a.m.</a></p>
+   <p><a href="https://www.fifa.com/worldcup/matches/match/300331545/#match-liveblog?cid=go_boxpreview">Poland vs. Senegal, 11 a.m.</a></p>
+   <p><a href="https://www.fifa.com/worldcup/matches/match/300331495/#match-liveblog?cid=go_boxpreview">Russia vs. Egypt, 2 p.m.</a></p>
 </div> 
 <div class="pica-tab-sections content_2 tabcontent" style="display:none;">
-<p><b>FRIDAY, JUNE 15</b></p>
+<h3 style="margin-top: 4px; margin-bottom: 2px;">SATURDAY, JUNE 16</h3>
+    <p>France 2, Australia 1</p>
+    <p>Argentina 1, Iceland 1</p>
+    <p>Peru 0, Denmark 1</p>
+    <p>Croatia 2, Nigeria 0</p>
+<h3 style="margin-top: 4px; margin-bottom: 2px;">FRIDAY, JUNE 15</h3>
     <p>Egypt 0, Uruguay 1</p>
     <p>Morocco 0, Iran 1</p>
     <p>Portugal 3, Spain 3</p>
-    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-    <div class='embed-container'><iframe src='https://www.youtube.com/embed/4rp2aLQl7vg' frameborder='0' allowfullscreen></iframe></div>
-	<p><b>THURSDAY, JUNE 14</b></p>
+<h3 style="margin-top: 4px; margin-bottom: 2px;">THURSDAY, JUNE 14</h3>
     <p>Russia 5, Saudi Arabia 0</p>
 </div>
 <div class="pica-tab-sections content_3 tabcontent" style="display:none;">
