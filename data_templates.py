@@ -45,41 +45,55 @@ core_template = '''\
 
 <!-- START TABS CONTROLS-->
 <section pica-tabs-section>
-<ul class="pica-tabs" style="margin-bottom: 12px;">
-	<li><a href="javascript:SwitchTab(\\\'tb_1\\\', \\\'content_1\\\');" class="tb_1 tabmenu active">Next</a></li>
-	<li><a href="javascript:SwitchTab(\\\'tb_2\\\', \\\'content_2\\\');" class="tb_2 tabmenu">Past</a></li>
-    <li><a href="javascript:SwitchTab(\\\'tb_3\\\', \\\'content_3\\\');" class="tb_3 tabmenu">Podcasts</a></li>
+<ul class="pica-tab-controls">
+    <li class="pica-tab-control" data-tab="1">Next matches</li>
+    <li class="pica-tab-control" data-tab="2">Previous</li>
+    <li class="pica-tab-control" data-tab="3">Podcasts</li>
 </ul>
 <!-- START TABS PANELS-->
-<div class="pica-tab-sections content_1 tabcontent">
+<div data-panel="1" class="pica-tab-panel">
     <p><small>All times Eastern</small></p>
-    <h3 style="margin-top: 4px; margin-bottom: 2px;">SUNDAY, JUNE 17</h3>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331529/#match-liveblog">Costa Rica 0,  Serbia 1</a></p>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331502/#match-liveblog">Germany 0, Mexico 1</a></p>
-    <p><a href="https://www.fifa.com/worldcup/matches/match/300331525/#match-liveblog">Brazil 1, Switzerland 1</a></p>
-<h3 style="margin-top: 4px; margin-bottom: 2px;">MONDAY, JUNE 18</h3>
-   <p><a href="https://www.fifa.com/worldcup/matches/match/300331499/#match-liveblog?cid=go_boxpreview">Sweden vs. South Korea, 8 a.m.</a></p>
-   <p><a href="https://www.fifa.com/worldcup/matches/match/300331539/#match-liveblog?cid=go_boxpreview">Belgium vs. Panama, 11 a.m.</a></p>
-   <p><a href="https://www.fifa.com/worldcup/matches/match/300331554/#match-liveblog?cid=go_boxpreview">Tunisa vs. England, 2 p.m.</a></p>
-   <h3 style="margin-top: 4px; margin-bottom: 2px;">TUESDAY, JUNE 19</h3>
-   <p><a href="https://www.fifa.com/worldcup/matches/match/300331550/#match-liveblog?cid=go_boxpreview">Colombia vs. Japan, 8 a.m.</a></p>
-   <p><a href="https://www.fifa.com/worldcup/matches/match/300331545/#match-liveblog?cid=go_boxpreview">Poland vs. Senegal, 11 a.m.</a></p>
-   <p><a href="https://www.fifa.com/worldcup/matches/match/300331495/#match-liveblog?cid=go_boxpreview">Russia vs. Egypt, 2 p.m.</a></p>
-</div> 
-<div class="pica-tab-sections content_2 tabcontent" style="display:none;">
-<h3 style="margin-top: 4px; margin-bottom: 2px;">SATURDAY, JUNE 16</h3>
-    <p>France 2, Australia 1</p>
-    <p>Argentina 1, Iceland 1</p>
-    <p>Peru 0, Denmark 1</p>
-    <p>Croatia 2, Nigeria 0</p>
-<h3 style="margin-top: 4px; margin-bottom: 2px;">FRIDAY, JUNE 15</h3>
-    <p>Egypt 0, Uruguay 1</p>
-    <p>Morocco 0, Iran 1</p>
-    <p>Portugal 3, Spain 3</p>
-<h3 style="margin-top: 4px; margin-bottom: 2px;">THURSDAY, JUNE 14</h3>
-    <p>Russia 5, Saudi Arabia 0</p>
+    <div style="display: flex; flex-wrap: wrap;">
+        <div style="flex: 1;">
+            <h3 style="margin-top: 4px; margin-bottom: 2px;">MONDAY, JUNE 18</h3>
+            <p><a href="https://www.fifa.com/worldcup/matches/match/300331499/#match-liveblog?cid=go_boxpreview">Sweden vs. South Korea, 8 a.m.</a></p>
+            <p><a href="https://www.fifa.com/worldcup/matches/match/300331539/#match-liveblog?cid=go_boxpreview">Belgium vs. Panama, 11 a.m.</a></p>
+            <p><a href="https://www.fifa.com/worldcup/matches/match/300331554/#match-liveblog?cid=go_boxpreview">Tunisa vs. England, 2 p.m.</a></p>
+        </div>
+        <div style="flex: 1;">
+            <h3 style="margin-top: 4px; margin-bottom: 2px;">TUESDAY, JUNE 19</h3>
+            <p><a href="https://www.fifa.com/worldcup/matches/match/300331550/#match-liveblog?cid=go_boxpreview">Colombia vs. Japan, 8 a.m.</a></p>
+            <p><a href="https://www.fifa.com/worldcup/matches/match/300331545/#match-liveblog?cid=go_boxpreview">Poland vs. Senegal, 11 a.m.</a></p>
+            <p><a href="https://www.fifa.com/worldcup/matches/match/300331495/#match-liveblog?cid=go_boxpreview">Russia vs. Egypt, 2 p.m.</a></p>
+        </div>
+    </div>
 </div>
-<div class="pica-tab-sections content_3 tabcontent" style="display:none;">
+<div data-panel="2" class="pica-tab-panel">
+    <div style="display: flex; flex-wrap: wrap;">
+        <div style="flex: 1;">
+            <h3 style="margin-top: 4px; margin-bottom: 2px;">SUNDAY, JUNE 17</h3>
+            <p>Costa Rica 0, Serbia 1</p>
+            <p>Germany 0, Mexico 1</p>
+            <p>Brazil 1, Switzerland 1</p>
+        </div>
+        <div style="flex: 1;">
+            <h3 style="margin-top: 4px; margin-bottom: 2px;">SATURDAY, JUNE 16</h3>
+            <p>France 2, Australia 1</p>
+            <p>Argentina 1, Iceland 1</p>
+            <p>Peru 0, Denmark 1</p>
+            <p>Croatia 2, Nigeria 0</p>
+        </div>
+        <div style="flex: 1;">
+            <h3 style="margin-top: 4px; margin-bottom: 2px;">FRIDAY, JUNE 15</h3>
+            <p>Egypt 0, Uruguay 1</p>
+            <p>Morocco 0, Iran 1</p>
+            <p>Portugal 3, Spain 3</p>
+            <h3 style="margin-top: 4px; margin-bottom: 2px;">THURSDAY, JUNE 14</h3>
+            <p>Russia 5, Saudi Arabia 0</p>
+        </div>
+    </div>
+</div>
+<div data-panel="3" class="pica-tab-panel">
 	<iframe src="https://www.podbean.com/media/player/e3dyn-933b16&?from=site&skin=1&fonts=Helvetica&auto=0&download=0&share=1&btn-skin=103" height="100" width="100%" frameborder="0" scrolling="no" data-name="pb-iframe-player"></iframe>
     <iframe src="https://www.podbean.com/media/player/d3x7v-933b06&?from=site&skin=1&fonts=Helvetica&auto=0&download=0&share=1&btn-skin=103" height="100" width="100%" frameborder="0" scrolling="no" data-name="pb-iframe-player"></iframe>
 </div>
@@ -124,31 +138,40 @@ var matches = document.querySelectorAll('div.pica-results');
 for (var i=0; i<matches.length; i++)
     matches[i].innerHTML = html_string;
 
-function SwitchTab(pica_tab, pica_tab_content) {
-	// first of all we get all tab content blocks (I think the best way to get them by class names)
-	var x = document.getElementsByClassName("tabcontent");
-	var i;
-	for (i = 0; i < x.length; i++) {
-		x[i].style.display = 'none'; // hide all tab content
-	}
-  
-	var y = document.getElementsByClassName(pica_tab_content) 
-    // display the content of the tab we need
-    for (i = 0; i < y.length; i++) {
-		y[i].style.display = 'block'; // hide all tab content
-	}
- 
-	// now we get all tab menu items by class names (use the next code only if you need to highlight current tab)
-	var z = document.getElementsByClassName("tabmenu");
-	for (i = 0; i < z.length; i++) {
-		z[i].className = 'tabmenu'; 
-	}
-
-    var q = document.getElementsByClassName(pica_tab)
-    var name = pica_tab.toString() + " tabmenu active"
-    for (i = 0; i < q.length; i++) {
-        q[i].className = name; 
-	}
+function pica_show(hide_selector, show_selector) {
+  var elements;
+  elements = document.querySelectorAll(hide_selector);
+  Array.prototype.forEach.call(elements, function(el, i){
+     el.style.display = 'none'; // // hide all tab content
+  });
+  elements = document.querySelectorAll(show_selector);
+  Array.prototype.forEach.call(elements, function(el, i){
+     el.style.display = 'block'; // // display the content of the tab we need
+  });
 }
+
+function pica_handler(e){
+  // hide all tab panels, then show selected panel
+  tab_id = this.getAttribute('data-tab');
+  var show_selector = 'div[data-panel="' + tab_id + '"]'
+  pica_show(".pica-tab-panel", show_selector)
+  // set selected tab control to active
+  tab_controls = document.querySelectorAll('.pica-tab-control')
+  Array.prototype.forEach.call(tab_controls, function(el, i){
+    el.className = 'pica-tab-control'; // set tab controls to base class
+  });
+  active_control = 'li[data-tab="' + tab_id + '"]'
+  tab_control_selected = document.querySelectorAll(active_control)
+  Array.prototype.forEach.call(tab_control_selected, function(el, i){
+    el.className = 'pica-tab-control active';
+  });
+}
+// start by applying listeners to tab controls
+var tab_controls = document.querySelectorAll('.pica-tab-control');
+Array.prototype.forEach.call(tab_controls, function(el, i){
+   el.addEventListener('click', pica_handler, false);
+});
+// select default tab
+document.getElementsByClassName('pica-tab-control')[0].click() 
 
 '''
