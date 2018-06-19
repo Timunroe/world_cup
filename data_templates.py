@@ -55,12 +55,6 @@ core_template = '''\
     <p><small>All times Eastern</small></p>
     <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
         <div style="flex: 1; min-width: 250px; margin: 0 10px 0 10px; margin-bottom: 6px;">
-            <h3 style="margin-top: 4px; margin-bottom: 2px;">MONDAY, JUNE 18</h3>
-            <p><a href="https://www.fifa.com/worldcup/matches/match/300331499/#match-liveblog">Sweden 1, South Korea 0</a></p>
-            <p><a href="https://www.fifa.com/worldcup/matches/match/300331539/#match-liveblog?cid=go_boxpreview">Belgium 3, Panama 0</a></p>
-            <p><a href="https://www.fifa.com/worldcup/matches/match/300331554/#match-liveblog?cid=go_boxpreview">Tunisa 1, England 2</a></p>
-        </div>
-        <div style="flex: 1; min-width: 250px; margin: 0 10px 0 10px; margin-bottom: 6px;">
             <h3 style="margin-top: 4px; margin-bottom: 2px;">TUESDAY, JUNE 19</h3>
             <p><a href="https://www.fifa.com/worldcup/matches/match/300331550/#match-liveblog?cid=go_boxpreview">Colombia vs. Japan, 8 a.m.</a></p>
             <p><a href="https://www.fifa.com/worldcup/matches/match/300331545/#match-liveblog?cid=go_boxpreview">Poland vs. Senegal, 11 a.m.</a></p>
@@ -88,20 +82,26 @@ core_template = '''\
 </div>
 <div data-panel="2" class="pica-tab-panel">
     <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
-        <div style="flex: 1; min-width: 250px; margin: 0 10px 0 10px;">
+        <div style="flex: 1; min-width: 250px; margin: 0 10px 0 10px; margin-bottom: 6px;">
+            <h3 style="margin-top: 4px; margin-bottom: 2px;">MONDAY, JUNE 18</h3>
+            <p>Sweden 1, South Korea 0</p>
+            <p>Belgium 3, Panama 0</p>
+            <p>Tunisa 1, England 2</p>
+        </div>
+        <div style="flex: 1; min-width: 250px; margin: 0 10px 0 10px; margin-bottom: 6px;">
             <h3 style="margin-top: 4px; margin-bottom: 2px;">SUNDAY, JUNE 17</h3>
             <p>Costa Rica 0, Serbia 1</p>
             <p>Germany 0, Mexico 1</p>
             <p>Brazil 1, Switzerland 1</p>
         </div>
-        <div style="flex: 1; min-width: 250px; margin: 0 10px 0 10px;">
+        <div style="flex: 1; min-width: 250px; margin: 0 10px 0 10px; margin-bottom: 6px;">
             <h3 style="margin-top: 4px; margin-bottom: 2px;">SATURDAY, JUNE 16</h3>
             <p>France 2, Australia 1</p>
             <p>Argentina 1, Iceland 1</p>
             <p>Peru 0, Denmark 1</p>
             <p>Croatia 2, Nigeria 0</p>
         </div>
-        <div style="flex: 1; min-width: 250px; margin: 0 10px 0 10px;">
+        <div style="flex: 1; min-width: 250px; margin: 0 10px 0 10px; margin-bottom: 6px;">
             <h3 style="margin-top: 4px; margin-bottom: 2px;">FRIDAY, JUNE 15</h3>
             <p>Egypt 0, Uruguay 1</p>
             <p>Morocco 0, Iran 1</p>
@@ -118,6 +118,9 @@ core_template = '''\
         </div>
         <div style="flex: 1; min-width: 400px; margin: 0 10px 0 10px;">
             <iframe src="https://www.podbean.com/media/player/d3x7v-933b06&?from=site&skin=1&fonts=Helvetica&auto=0&download=0&share=1&btn-skin=103" height="100" width="100%" frameborder="0" scrolling="no" data-name="pb-iframe-player"></iframe>
+        </div>
+        <div style="flex: 1; min-width: 400px; margin: 0 10px 0 10px;">
+            <iframe src="https://www.podbean.com/media/player/j6h46-937faf&?from=site&skin=1&fonts=Helvetica&auto=0&download=0&share=1&btn-skin=103" height="100" width="100%" frameborder="0" scrolling="no" data-name="pb-iframe-player"></iframe>
         </div>
     </div>
 </div>
