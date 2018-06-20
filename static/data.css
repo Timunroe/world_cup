@@ -150,3 +150,12 @@ ul.pica-tab-controls {
   .pica-tab-control:active {
     opacity: .8; transition: opacity .15s ease-out;
   }
+
+  .pica-tab-panel {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .3);
+    border-top-style: none;
+    padding: 0.5rem;
+    padding-top: 1rem;
+}

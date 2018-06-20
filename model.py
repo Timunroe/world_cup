@@ -9,11 +9,6 @@ import time
 
 # ALL ABOUT THE DATA: ThIS MODULE TRANSFORMS DATA, DEALS WITH DATABASE
 
-# let's just have one db, no tables, no nested dicts
-# we'll introduce another field 'section' to determine
-# what goes in Spec or Niagara or Halton or Haldimand-Norforlk
-
-
 def parse_feed(items):
     # input a list of dicts (ie fetched data from an api, rss)
     posts = []
