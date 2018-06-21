@@ -113,8 +113,8 @@ ul.pica-tab-controls {
 
   .pica-tab-panel_items:after {
     content: "";
-    flex: 1 1 250px;
-    margin: 0 10px 10px 10px;
+    flex: 1 1 240px;
+    margin: 0 10px 6px 10px;
   }
   
   li.pica-tab-control {

@@ -34,7 +34,7 @@ core_template = '''\
         {% endif %}
         <div class="pica-card-text">
             <a class="pica-link" target="_blank" href="{{ item['link'] }}">
-                <h3 style="margin-top: 8px; margin-bottom: 6px; color: black; font-family: -apple-system, BlinkMacSystemFont, avenir, helvetica, ubuntu, roboto, noto, arial, sans-serif; font-weight: 500;" class="">{{ item['title_api']|safe|replace("WORLD CUP:", "") }}</h3>
+                <h3 style="margin-top: 8px; margin-bottom: 6px; color: black; font-family: georgia, times, serif; font-weight: 500;" class="">{{ item['title_api']|safe|replace("WORLD CUP:", "") }}</h3>
                 <p class=""><small style="color: grey;">{{ item['label_user']|safe if item['label_user'] else item['label_api']|safe }}</small></p>
             </a>
         </div>
@@ -57,9 +57,9 @@ core_template = '''\
         <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
             <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
                 <h3 style="margin-top: 4px; margin-bottom: 2px;">THURSDAY, JUNE 21</h3>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331518/#match-liveblog?cid=go_boxpreview">Denmark vs. Australia, 8 a.m.</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331527/#match-liveblog?cid=go_boxpreview">France vs. Peru, 11 a.m.</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331513/#match-liveblog?cid=go_boxpreview">Argentina vs. Croatia, 2 p.m.</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331518/#match-liveblog?cid=go_boxpreview">Denmark 1, Australia 1</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331527/#match-liveblog?cid=go_boxpreview">France 1, Peru 0</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331513/#match-liveblog?cid=go_boxpreview">Croatia 3, Argentina 0</a></p>
             </div>
             <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
                 <h3 style="margin-top: 4px; margin-bottom: 2px;">FRIDAY, JUNE 22</h3>
