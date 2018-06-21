@@ -57,9 +57,10 @@ core_template = '''\
         <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
             <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
                 <h3 style="margin-top: 4px; margin-bottom: 2px;">WEDNESDAY, JUNE 20</h3>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331511/#match-liveblog?cid=go_boxpreview">Portugal vs. Morroco, 8 a.m.</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331530/#match-liveblog?cid=go_boxpreview">Uruguay vs. Saudi Arabia, 11 a.m.</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331496/#match-liveblog?cid=go_boxpreview">Iran vs. Spain, 2 p.m.</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331511/#match-liveblog?cid=go_boxpreview">Portugal 1, Morroco 0</a></p>
+                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/iCIlEbZWITI' frameborder='0' allowfullscreen></iframe></div>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331530/#match-liveblog?cid=go_boxpreview">Uruguay 1, Saudi Arabia 0</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331496/#match-liveblog?cid=go_boxpreview">Spain 1, Iran 0</a></p>
             </div>
             <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
                 <h3 style="margin-top: 4px; margin-bottom: 2px;">THURSDAY, JUNE 21</h3>
@@ -115,17 +116,7 @@ core_template = '''\
         </div>
     </div>
     <div class="pica-tab-panel" data-tab="3">
-        <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
-            <div style="flex: 1; min-width: 400px; margin: 0 10px 0 10px;">
-                <iframe src="https://www.podbean.com/media/player/e3dyn-933b16&?from=site&skin=1&fonts=Helvetica&auto=0&download=0&share=1&btn-skin=103" height="100" width="100%" frameborder="0" scrolling="no" data-name="pb-iframe-player"></iframe>
-            </div>
-            <div style="flex: 1; min-width: 400px; margin: 0 10px 0 10px;">
-                <iframe src="https://www.podbean.com/media/player/d3x7v-933b06&?from=site&skin=1&fonts=Helvetica&auto=0&download=0&share=1&btn-skin=103" height="100" width="100%" frameborder="0" scrolling="no" data-name="pb-iframe-player"></iframe>
-            </div>
-            <div style="flex: 1; min-width: 400px; margin: 0 10px 0 10px;">
-                <iframe src="https://www.podbean.com/media/player/j6h46-937faf&?from=site&skin=1&fonts=Helvetica&auto=0&download=0&share=1&btn-skin=103" height="100" width="100%" frameborder="0" scrolling="no" data-name="pb-iframe-player"></iframe>
-            </div>
-        </div>
+        <iframe id="multi_iframe" frameborder="0" scrolling="no" allowfullscreen="" src="https://www.podbean.com/media/player/multi?playlist=http%3A%2F%2Fplaylist.podbean.com%2F759247%2Fplaylist_multi.xml&vjs=1&kdsowie31j4k1jlf913=2eb7c0cf1e0b2b2d7e13516349a49cb12aec6af8&size=240&share=1&fonts=Helvetica&auto=0&download=0&rtl=0&skin=3" width="100%" height="430"></iframe>
     </div>
 </div>
 </section>
