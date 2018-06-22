@@ -57,8 +57,8 @@ core_template = '''\
         <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
             <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
                 <h3 style="margin-top: 4px; margin-bottom: 2px;">FRIDAY, JUNE 22</h3>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331540/#match-liveblog?cid=go_boxpreview">Brazil vs. Costa Rica, 8 a.m.</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331497/#match-liveblog?cid=go_boxpreview">Nigeria vs. Iceland, 11 a.m.</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331540/#match-liveblog?cid=go_boxpreview">Brazil 2, Costa Rica 0</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331497/#match-liveblog?cid=go_boxpreview">Nigeria 2, Iceland 0</a></p>
                 <p><a href="https://www.fifa.com/worldcup/matches/match/300340183/#match-liveblog?cid=go_boxpreview">Serbia vs. Switzerland, 2 p.m.</a></p>
             </div>
             <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
