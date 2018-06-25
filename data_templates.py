@@ -56,24 +56,6 @@ core_template = '''\
         <p><small>All times Eastern</small></p>
         <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
             <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
-                <h3 style="margin-top: 4px; margin-bottom: 2px;">FRIDAY, JUNE 22</h3>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331540/#match-liveblog?cid=go_boxpreview">Brazil 2, Costa Rica 0</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331497/#match-liveblog?cid=go_boxpreview">Nigeria 2, Iceland 0</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300340183/#match-liveblog?cid=go_boxpreview">Switzerland 2, Serbia 1</a></p>
-            </div>
-            <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
-                <h3 style="margin-top: 4px; margin-bottom: 2px;">SATURDAY, JUNE 23</h3>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331547/#match-liveblog?cid=go_boxpreview">Belgium vs. Tunisia, 8 a.m.</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331549/#match-liveblog?cid=go_boxpreview">South Korea vs. Mexico, 11 a.m.</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331501/#match-liveblog?cid=go_boxpreview">Germany vs. Sweden, 2 p.m.</a></p>
-            </div>
-            <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
-                <h3 style="margin-top: 4px; margin-bottom: 2px;">SUNDAY, JUNE 24</h3>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331546/#match-liveblog?cid=go_boxpreview">England vs. Panama, 8 a.m.</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331505/#match-liveblog?cid=go_boxpreview">Japan vs. Senegal, 11 a.m.</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331508/#match-liveblog?cid=go_boxpreview">Poland vs. Colombia, 2 p.m.</a></p>
-            </div>
-            <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
                 <h3 style="margin-top: 4px; margin-bottom: 2px;">MONDAY, JUNE 25</h3>
                 <p><a href="https://www.fifa.com/worldcup/matches/match/300331509/#match-liveblog?cid=go_boxpreview">Saudi Arabia vs. Egypt, 8 a.m.</a></p>
                 <p><a href="https://www.fifa.com/worldcup/matches/match/300331516/#match-liveblog?cid=go_boxpreview">Uruguay vs. Russia, 11 a.m.</a></p>
@@ -94,15 +76,40 @@ core_template = '''\
                 <p><a href="https://www.fifa.com/worldcup/matches/match/300331534/#match-liveblog?cid=go_boxpreview">Switzerland vs. Costa Rica, 2 p.m.</a></p>
                 <p><a href="https://www.fifa.com/worldcup/matches/match/300331521/#match-liveblog?cid=go_boxpreview">Serbia vs. Brazil, 2 p.m.</a></p>
             </div>
+            <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
+                <h3 style="margin-top: 4px; margin-bottom: 2px;">THURSDAY, JUNE 28</h3>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331553/#match-liveblog?cid=go_boxpreview">Senegal vs. Colombia, 10 a.m.</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331507/#match-liveblog?cid=go_boxpreview">Japan vs. Poland, 10 a.m.</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300340182/#match-liveblog?cid=go_boxpreview">England vs. Belgium, 2 p.m.</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331520/#match-liveblog?cid=go_boxpreview">Panama vs. Tunisia, 2 p.m.</a></p>
+            </div>
         </div>
     </div>
     <div class="pica-tab-panel" data-tab="2">
         <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
             <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
+                <h3 style="margin-top: 4px; margin-bottom: 2px;">SUNDAY, JUNE 24</h3>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331546/#match-liveblog?cid=go_boxpreview">England 6, Panama 1</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331505/#match-liveblog?cid=go_boxpreview">Japan 2, Senegal 2</a></p>
+                <p><a href="https://www.fifa.com/worldcup/matches/match/300331508/#match-liveblog?cid=go_boxpreview">Colombia 3, Poland 0</a></p>
+            </div>
+            <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
+                <h3 style="margin-top: 4px; margin-bottom: 2px;">SATURDAY, JUNE 23</h3>
+                <p>Belgium 5, Tunisia 2</p>
+                <p>Mexico 2, South Korea 1</p>
+                <p>Germany 2, Sweden 1</p>
+            </div>        
+            <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
+                <h3 style="margin-top: 4px; margin-bottom: 2px;">FRIDAY, JUNE 22</h3>
+                <p>Brazil 2, Costa Rica 0</p>
+                <p>Nigeria 2, Iceland 0</p>
+                <p>Switzerland 2, Serbia 1</p>
+            </div>
+            <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
                 <h3 style="margin-top: 4px; margin-bottom: 2px;">THURSDAY, JUNE 21</h3>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331518/#match-liveblog?cid=go_boxpreview">Denmark 1, Australia 1</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331527/#match-liveblog?cid=go_boxpreview">France 1, Peru 0</a></p>
-                <p><a href="https://www.fifa.com/worldcup/matches/match/300331513/#match-liveblog?cid=go_boxpreview">Croatia 3, Argentina 0</a></p>
+                <p>Denmark 1, Australia 1</p>
+                <p>France 1, Peru 0</p>
+                <p>Croatia 3, Argentina 0</p>
             </div>
             <div style="flex: 1; min-width: 240px; margin: 0 10px 0 10px; margin-bottom: 6px;">
                 <h3 style="margin-top: 4px; margin-bottom: 2px;">WEDNESDAY, JUNE 20</h3>
@@ -217,5 +224,26 @@ var defaults = document.querySelectorAll('li.pica-tab-control[data-tab-default="
 Array.prototype.forEach.call(defaults, function(el, i){
   el.click();
 });
+
+var ids_to_hide = ["div1702", "div1703", "div3404", "div3495"];
+var selectors_to_hide = ["#div1195 div section", "#div1195 div p", "#div3472 div section", "#div3472 div p"];
+var el;
+
+for (item in ids_to_hide) {
+  try {
+    el = document.getElementById(ids_to_hide[item]);
+    el.style.display = 'none';
+  }
+  catch(err) {
+  }
+}
+for (item in selectors_to_hide) {
+  try {
+    el = document.querySelector(selectors_to_hide[item]);
+    el.style.display = 'none';
+  }
+  catch(err) {
+  }
+}
 
 '''
