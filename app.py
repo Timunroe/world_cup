@@ -55,6 +55,12 @@ def view_entry(record_id):
     return render_template('item.html', data=template_data[0])
 
 
+@app.route('/preview')
+def preview():
+    template_data = {"posts": model.get_lineup()}
+    return render_template('preview.html', data=template_data)
+
+
 @app.route('/about')
 def about():
     return render_template('about.html')

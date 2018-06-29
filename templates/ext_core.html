@@ -1,0 +1,60 @@
+{% macro show_post(item) %}
+    <article class="pica-card pica-fade" style="margin-top: 18px;">
+        {% if item['img_api'] != '' %}
+        <div class="pica-card-image">
+            <a class="pica-link" target="_blank" href="{{ item['link'] }}">
+                <div class="pica-image-wrapper" style="">
+                    <img class="pica-image" style="" src="{{ item['img_api'] }}">
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        <div class="pica-card-text">
+            <a class="pica-link" target="_blank" href="{{ item['link'] }}">
+                <h3 style="margin-top: 8px; margin-bottom: 6px; color: black; font-family: georgia, times, serif; font-weight: 500;" class="">{{ item['title_user']|safe if item['title_user'] else item['title_api']|safe|replace("WORLD CUP:", "") }}</h3>
+                <p class=""><small style="color: grey;">{{ item['label_user']|safe if item['label_user'] else item['label_api']|safe }}</small></p>
+            </a>
+        </div>
+    </article>
+{% endmacro %}
+
+<!-- STATIC HEADER START -->
+ <!--TABS START-->
+ <section class="pica-tabs">
+    <!--TABS CONTROLS START-->
+    <div class="pica-tab-controls">
+        <div class="pica-tab-control" data-tab="1" data-tab-default="yes">Next matches</div>
+        <div class="pica-tab-control" data-tab="2">Previous</div>
+        <div class="pica-tab-control" data-tab="3">Podcasts</div>
+    </div>
+    <!--TABS CONTROLS END-->
+    <!--TABS PANELS START-->
+    <div class="pica-tab-panels pica-sans-serif">
+        <div class="pica-tab-panel" data-tab="1">
+            <p><small>All times Eastern</small></p>
+            <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
+                {% include 'ext_future_sked.html' %}
+            </div>
+        </div>
+        <div class="pica-tab-panel" data-tab="2">
+            <div class="pica-tab-panel_items" style="display: flex; flex-wrap: wrap; margin: 0 -10px 0 -10px;">
+                {% include 'ext_past_sked.html' %}
+            </div>
+        </div>
+
+        <div class="pica-tab-panel" data-tab="3">
+            <iframe id="multi_iframe" frameborder="0" scrolling="no" allowfullscreen="" src="https://www.podbean.com/media/player/multi?playlist=http%3A%2F%2Fplaylist.podbean.com%2F759247%2Fplaylist_multi.xml&vjs=1&kdsowie31j4k1jlf913=2eb7c0cf1e0b2b2d7e13516349a49cb12aec6af8&size=240&share=1&fonts=Helvetica&auto=0&download=0&rtl=0&skin=3" width="100%" height="430"></iframe>
+        </div>
+    </div>
+    <!--TABS PANELS END-->
+</section>
+<!--TABS END-->
+<!-- END STATIC HEADER -->
+
+<!-- CURATION LIST -->
+<section class="pica-cards">
+    {%- for item in data['posts'] -%}
+        {{ show_post(item) }}
+    {%- endfor %}
+</section>
+<!-- END CURATION LIST -->
