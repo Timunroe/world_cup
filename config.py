@@ -37,10 +37,6 @@ config = {
             {
                 "url": 'http://api.zuza.com/search/article/default?&category=sports&subcategory=soccer&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10',
                 "filter": ["searchResultView"]
-            },
-                        {
-                "url": 'http://api.zuza.com/search/article/default?&category=sports&subcategory=world-cup&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10',
-                "filter": ["searchResultView"]
             }
     ],
     "munge": []
