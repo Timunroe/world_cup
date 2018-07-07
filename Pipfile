@@ -12,6 +12,6 @@ smartypants = "*"
 "boto3" = "*"
 tinydb = "*"
 pylint = "*"
+yapf = "*"
 
 [dev-packages]
-
