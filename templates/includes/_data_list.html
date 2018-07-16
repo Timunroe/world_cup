@@ -1,3 +1,50 @@
+{% macro show_staus_bar(item, page) %}
+<div class="d-flex flex-row flex-wrap align-items-center justify-content-start">
+    <div class="mr-3">
+        <label class="small" style="" for="draft">STATUS</label>
+        <select class="" style="font-size: 12.8px;" name="draft">
+        {% if item['draft'] == '0' %}
+        <option value="{{ item['asset_id'] }}__draft__2">DRAFT</option>
+        <option value selected="selected">PUBLISH</option>
+        {% else %}
+        <option value selected="selected">DRAFT</option>
+        <option value="{{ item['asset_id'] }}__draft__0">PUBLISH</option>
+        {% endif %}
+        </select>
+    </div>
+    <div class="mr-3">
+        <label class="small" style="" for="rank">RANK</label>
+        <select class="" name="rank">
+        {% for rank in ['0', '1', '2', '3', '4', '5', '6'] %}
+        <option
+        {% if item['rank']==rank %} value selected="selected" {% else %} value="{{ item['asset_id'] }}__rank__{{rank}}" {% endif %}
+        >{{ rank }}</option>
+        {% endfor %}
+        </select>
+    </div>
+    <div class="">
+        <label class="small" style="" for="rank_time">LOCK</label>
+        <select class="" name="rank_time">
+        {% for hours in ['0', '4', '8', '12', '24'] %}
+        <option
+        {% if item['rank_time']==hours %} value selected="selected"
+        {% else %} value="{{ item['asset_id'] }}__rank_time__{{ hours }}" {% endif %}
+        >{{ hours }}</option>
+        {% endfor %}
+        </select>
+        <span class="small">HOURS</span>
+    </div>
+</div>
+{% endmacro %}
+
+<h1>My Blog</h1>
+<h2>Featured Post</h2>
+{{ show_post(featured_post) }}
+{% for post in posts %}
+    {{ show_post(post) }}
+{% endfor %}
+
+
 {% set active_page = active_page -%}
 
 <div class="card">
@@ -9,12 +56,12 @@
             </div>
             {% endif %}
             <div class="card-body-text flex-shrink-1">
-                <h5 class="card-title mb-0">{{ item['title_user']|safe if item['title_user'] else item['title_api']|safe|replace("WORLD CUP:", "") }}</h5>
+                <h5 class="card-title mb-0">{{ item['title']|safe if item['title'] else item['title_api']|safe|replace("WORLD CUP:", "") }}</h5>
                 {% if not item['img_api_thumb'] %}
-                    <p class="card-text small">{{ item['desc_user']|safe|truncate(150, False) if item['desc_user'] else item['desc_api']|safe|truncate(150, False)|replace("WORLD CUP:", "") }}</p>
+                    <p class="card-text small">{{ item['desc']|safe|truncate(150, False) if item['desc'] else item['desc_api']|safe|truncate(150, False)|replace("WORLD CUP:", "") }}</p>
                 {% endif %}
                 <p class="card-text small">
-                    <b>Label:</b> {{ item['label_user']|safe if item['label_user'] else item['label_api']|safe }} |
+                    <b>Label:</b> {{ item['label']|safe if item['label'] else item['label_api']|safe }} |
                     <b>Source</b>: {% if item['source_api'] != '' %} {{ item['source_api'] }} {% elif item['site_api'] == '' %}  CP {% else %} {{ item['site_api'] }} {% endif %} |
                     <b>Author</b>: {{ item['author_api']|safe }} |
                     <b>Published</b>: {{ item['timestamp'] }}
@@ -27,12 +74,12 @@
             <div class="mr-3">
                 <label class="small" style="" for="draft">STATUS</label>
                 <select class="" style="font-size: 12.8px;" name="draft">
-                {% if item['draft_user'] == 0 %}
-                <option value="{{ item['asset_id'] }}__draft_user__2">DRAFT</option>
+                {% if item['draft'] == '0' %}
+                <option value="{{ item['asset_id'] }}__draft__2">DRAFT</option>
                 <option value selected="selected">PUBLISH</option>
                 {% else %}
                 <option value selected="selected">DRAFT</option>
-                <option value="{{ item['asset_id'] }}__draft_user__0">PUBLISH</option>
+                <option value="{{ item['asset_id'] }}__draft__0">PUBLISH</option>
                 {% endif %}
                 </select>
             </div>
@@ -40,7 +87,7 @@
             <div class="mr-3">
                 <label class="small" style="" for="rank">RANK</label>
                 <select class="" name="rank">
-                {% for rank in [0, 1, 2, 3, 4, 5, 6] %}
+                {% for rank in ['0', '1', '2', '3', '4', '5', '6'] %}
                 <option
                 {% if item['rank']==rank %} value selected="selected" {% else %} value="{{ item['asset_id'] }}__rank__{{rank}}" {% endif %}
                 >{{ rank }}</option>
@@ -50,7 +97,7 @@
             <div class="">
                 <label class="small" style="" for="rank_time">LOCK</label>
                 <select class="" name="rank_time">
-                {% for hours in [0, 4, 8, 12, 24] %}
+                {% for hours in ['0', '4', '8', '12', '24'] %}
                 <option
                 {% if item['rank_time']==hours %} value selected="selected"
                 {% else %} value="{{ item['asset_id'] }}__rank_time__{{ hours }}" {% endif %}

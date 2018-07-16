@@ -27,7 +27,7 @@ def lineup():
         if request.form['action'] == 'fetch':
             model.get_new_data()
     template_data = {"items": model.get_lineup()}
-    return render_template('lineup.html', data=template_data, draft_check=False)
+    return render_template('lineup.html', data=template_data)
 
 
 @app.route('/drafts', methods=['GET', 'POST'])
@@ -48,11 +48,11 @@ def view_entry(record_id):
             model.parse_form(request.form, "item")
         if request.form['action'] == 'cancel':
             return redirect(url_for('lineup'))
-    template_data = model.get_record(s_id=record_id)
+    template_data =  {"items": [model.get_record(s_id=record_id)]}    
     # print(template_data)
     # template_data['modDate'] = (arrow.get(template_data['modDate'])).to('US/Eastern').format('YYYY-MM-DD h:mm a')
     # print(template_data)
-    return render_template('item.html', data=template_data[0])
+    return render_template('item.html', data=template_data)
 
 
 @app.route('/preview')

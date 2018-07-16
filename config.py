@@ -4,13 +4,13 @@ config = {
     "name": "spec",
     "db_name": "world_cup.json",
     "db_fields_dflt": {
-        'desc_user': '',
-        'draft_user': 0,  # int 0:published, 1-2: draft
-        'rank': 0, # int
-        'rank_time': 0, # int
-        'label_user': '',
-        'title_user': '',
-        'tags_user': [], # list of strings
+        'desc': '',
+        'draft': '0',  #  0:published, 1-2: draft
+        'rank': '0', # must convert to int for operations
+        'rank_time': '0', # must convert to int for operations
+        'label': '',
+        'title': '',
+        'tags': [], # list of strings
     },
     "db_fields": 
     [
@@ -35,11 +35,11 @@ config = {
     "apis":
         [
             {
-                "url": 'http://api.zuza.com/search/article/default?&category=sports&subcategory=soccer&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10',
+                "url": 'http://api.zuza.com/search/article/default?&category=sports&subcategory=soccer&pageIndex=1&location=hamilton&sort=datedesc&pageSize=5&startindex=1&endindex=5',
                 "filter": ["searchResultView"]
             },
             {
-                "url": 'http://api.zuza.com/search/article/default?&category=sports&pageIndex=1&location=hamilton&sort=datedesc&pageSize=15&startindex=1&endindex=15',
+                "url": 'http://api.zuza.com/search/article/default?&category=sports&pageIndex=1&location=hamilton&sort=datedesc&pageSize=1&startindex=1&endindex=1',
                 "filter": ["searchResultView"]
             }
     ],

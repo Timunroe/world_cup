@@ -19,10 +19,6 @@ page_template = '''\
 </html
 '''
 
-core_template = '''\
-
-'''
-
 script_template = '''\
 var pica_add = (function() {
     var executed = false;
